@@ -49,7 +49,16 @@ def count_elements(array)
 end
 
 def merge_data(keys,data)
-
+    return_array = []
+  keys.each do |name_hash|
+    data.each do |names|
+      first_name =  name_hash[:first_name]
+      person_info = names[first_name]
+      return_hash = name_hash.merge(person_info)
+      return_array.push(return_hash)
+    end
+  end
+  return return_array
 end
 
 def find_cool(array)
