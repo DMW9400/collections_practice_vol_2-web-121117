@@ -74,9 +74,6 @@ def organize_schools(hash)
       chicago_array<< key
   end
   end
-  puts nyc_array
-  puts sf_array
-  puts chicago_array
   return_hash["NYC"] = nyc_array
   return_hash["SF"] = sf_array
   return_hash["Chicago"] = chicago_array
